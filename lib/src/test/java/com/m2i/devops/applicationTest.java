@@ -8,7 +8,7 @@ public class applicationTest {
 
 	@Test
 	public void testMain() {
-		application app = new application();
+		Application app = new Application();
 		// app.main({'a','b'});
 		assertTrue(true); 
 	}
