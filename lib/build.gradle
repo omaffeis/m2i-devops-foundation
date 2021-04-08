@@ -12,7 +12,7 @@ plugins {
     id 'jacoco'
     id 'com.github.spotbugs' version "4.7.0"
     id 'checkstyle'
-    id 'pmd'
+    //id 'pmd'
     // For CPD
 	//id 'de.aaschmid.cpd' version '3.1'
     //id 'ru.vyarus.quality' version '4.0.0'
@@ -47,11 +47,12 @@ checkstyle {
 }
 
 checkstyleMain {
-	source ='lib/src/main/java'
+	source fileTree('lib/src/main/java')
 	include '**/*.java'
 	configFile = file ("${rootProject.rootDir}/config/checkstyle/checkstyle.xml")
 }
 
+/*
 pmd {
     ignoreFailures = true
     consoleOutput = true
@@ -60,7 +61,7 @@ pmd {
     ruleSets = ["category/java/errorprone.xml", "category/java/bestpractices.xml"]
 }
 
-/*
+
 quality {
     cpd = true // false to disable plugin configuration
     cpdUnifySources = true // false to not modify cpdCheck task sources
