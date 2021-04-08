@@ -11,7 +11,7 @@ plugins {
     id 'java-library'
     id 'jacoco'
     id 'com.github.spotbugs' version "4.7.0"
-    //id 'checkstyle'
+    id 'checkstyle'
     id 'pmd'
     // For CPD
 	//id 'de.aaschmid.cpd' version '3.1'
@@ -34,9 +34,22 @@ dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
 }
 
+
 spotbugs {
     ignoreFailures = true
-    spotbugsTest.enabled = false;
+    spotbugsTest.enabled = false
+}
+
+checkstyle {
+	ignoreFailures = true
+	toolVersion = "8.41.1"
+	checkstyleTest.enabled = false
+}
+
+checkstyleMain {
+	source ='lib/src/main/java'
+	include '**/*.java'
+	configFile = file ("${rootProject.rootDir}/config/checkstyle/checkstyle.xml")
 }
 
 pmd {
