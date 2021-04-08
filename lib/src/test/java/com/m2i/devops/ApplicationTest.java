@@ -4,12 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class applicationTest {
+public class ApplicationTest {
 
 	@Test
 	public void testMain() {
 		Application app = new Application();
 		// app.main({'a','b'});
+		
 		assertTrue(true); 
 	}
 
