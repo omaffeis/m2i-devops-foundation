@@ -31,4 +31,5 @@ dependencies {
 
 spotbugs {
     ignoreFailures = true
+    spotbugsTest.enabled = false;
 }	
