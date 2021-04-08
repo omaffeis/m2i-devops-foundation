@@ -9,7 +9,7 @@ public class application {
 		Calculator calc = new Calculator();
 		System.out.println("Add 2+3 : " + calc.add( 2, 3));
 		System.out.println("Sub 2-3 : " + calc.sub( 2, 3));
-
+		System.out.println("IsEven 4  : " + calc.isEven(4));
 	}
 
 }
