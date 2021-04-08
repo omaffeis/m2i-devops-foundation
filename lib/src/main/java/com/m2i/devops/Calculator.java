@@ -1,22 +1,63 @@
 package com.m2i.devops;
 
+/**
+ * @author Administrateur
+ *
+ */
 public class Calculator {
-  public int  add(int a, int b) {
-    return a+b;
+  
+  
+  /**
+   * Add two numbers
+   * 
+   * @param a
+   * @param b
+   * @return
+   */
+  public int  add(int leftVal, int rightVal) {
+    return leftVal+rightVal;
   }
 
+  /**
+   * Add two numbers
+   * 
+   * @param a
+   * @param b
+   * @return
+   */
   public int  mult(int a, int b) {
     return a*b;
   }
 
+  /**
+   * Add two numbers
+   * 
+   * @param a
+   * @param b
+   * @return
+   */
   public int sub(int a, int b) {
     return a-b;
   }
 
+  /**
+   * Add two numbers
+   * 
+   * @param a
+   * @param b
+   * @return
+   */
   public int mod(int a, int b) {
     return a%b;
   }
 
+  /**
+   * Add two numbers
+   * 
+   * @param a
+   * @param b
+   * @return
+   */
   public boolean isEven(int a) {
     return mod(a, 2) == 0;
   }
