@@ -14,8 +14,8 @@ plugins {
     //id 'checkstyle'
     id 'pmd'
     // For CPD
-	id 'de.aaschmid.cpd' version '3.1'
-    id 'ru.vyarus.quality' version '4.0.0'
+	//id 'de.aaschmid.cpd' version '3.1'
+    //id 'ru.vyarus.quality' version '4.0.0'
 }
 
 repositories {
@@ -47,6 +47,7 @@ pmd {
     ruleSets = ["category/java/errorprone.xml", "category/java/bestpractices.xml"]
 }
 
+/*
 quality {
     cpd = true // false to disable plugin configuration
     cpdUnifySources = true // false to not modify cpdCheck task sources
@@ -55,3 +56,4 @@ quality {
 cpd {
     ignoreFailures = true
 }
+*/
